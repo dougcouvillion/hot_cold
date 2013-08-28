@@ -1,0 +1,101 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    Customized CSS begins here.  Everything above is part of the reset.
+*/
+
+body {
+    margin: 50px 50px 50px 50px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin: 10px 0px 10px 0px;
+}
+
+#guess, #btnGuess {
+    display: inline;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.feedback {
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 2px #000000;
+    width: 250px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    display: inline;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+    display: none;
+}
+
+.correct {
+    background-color: green;
+    color: yellow;
+    display: none;
+}
+
+.button {
+    background-color: orange;
+    color: blue;
+    font-weight: 600;
+    padding: 5px;
+    border: solid blue 1px;
+    border-radius: 2px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
+    <title>Hot Cold</title>
+</head>
+<body>
+    <!-- div levelOfDifficulty is for the selection of the level of difficulty -->
+    <div id="levelOfDifficulty">
+        Level of Difficulty:
+        <select id="difficulty">
+            <option value="null" selected>Select a level to begin</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div> <!-- end div levelOfDifficulty -->
+
+    <!-- LODSelected contains those items that should only be displayed after
+         the user selects the level of difficulty -->
+    <div id="LODSelected">
+        <!-- display of the possible range of numbers -->
+        <div id="range">
+            <p>I'm thinking of a number between 1 and <span id="max">x</span>.</p>
+        </div> <!-- end div range -->
+
+        <!-- give the users a place to enter their guesses -->
+        <div id="guess">
+            Your Guess: <input type="text" id="inputGuess">
+        </div> <!-- end div guess -->
+        <!-- give the users a button to click when they are ready to guess -->
+        <div class="button" id="btnGuess">Guess</div>
+
+        <!-- the results div is used to display the results of the user's latest guess -->
+        <div id="results">
+            <div class="feedback incorrect" id="too_low">
+                Your guess was too LOW.
+            </div>
+            <div class="feedback correct" id="just_right">
+                You guessed the number!
+            </div>
+            <div class="feedback incorrect" id="too_high">
+                Your guess was too HIGH.
+            </div>
+        </div> <!-- end div results -->
+    </div> <!-- end div LODSelected -->
+
+    <!-- load the JavaScript to make all this work -->
+    <script type="text/javascript" src="scripts/hotCold.js"></script>
+</body>
+</html>
